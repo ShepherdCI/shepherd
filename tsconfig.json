@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "es6",
+        "moduleResolution": "node",
+        "target": "es5",
+        "lib": ["esnext", "dom"],
+        "allowJs": false,
+        "strict": true,
+        "experimentalDecorators": true,
+        "noEmitHelpers": false,
+        "importHelpers": true,
+        "allowSyntheticDefaultImports": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
+    },
+    "include": [
+        "app/javascript/**/*",
+        "**/*.test.ts"
+    ],
+    "exclude": [
+        "node_modules/**/*"
+    ]
+}

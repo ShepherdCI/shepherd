@@ -1,0 +1,18 @@
+let body = document.getElementById('body')
+
+let shouldClose = <%= Rails.env.development? ? 'false' : 'true' %>
+let payload = <%= raw @payload %>
+
+if (window.opener) {
+  window.opener.postMessage(payload, window.origin)
+  window.close()
+} else {
+  if (shouldClose) {
+    window.close()
+  } else {
+    let outputLog = document.createElement('div')
+    outputLog.setAttribute('style', 'font-family: monospace')
+    outputLog.textContent = JSON.stringify(payload)
+    body.appendChild(outputLog)
+  }
+}

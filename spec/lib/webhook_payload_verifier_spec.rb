@@ -1,6 +1,8 @@
 require 'spec_helper'
 
-describe VerifyWebhookPayloadSignature do
+require 'webhook_payload_verifier'
+
+describe WebhookPayloadVerifier do
   let(:request) { double('Rack::Request', raw_post: post_body, headers: request_headers) }
 
   let(:post_body) do
@@ -9,7 +11,9 @@ describe VerifyWebhookPayloadSignature do
 
   let(:request_headers) { {} }
 
-  subject(:verify) { described_class.call(secret: secret, request: request) }
+  let(:instance) { described_class.new }
+
+  subject(:verify) { instance.verify(secret: secret, request: request) }
 
   context 'secret is blank' do
     let(:secret) { '' }
@@ -29,8 +33,8 @@ describe VerifyWebhookPayloadSignature do
         }
       end
 
-      it 'should return succes' do
-        expect(verify).to be_success
+      it 'returns true' do
+        expect(verify).to eq true
       end
     end
 
@@ -41,10 +45,8 @@ describe VerifyWebhookPayloadSignature do
         }
       end
 
-      it 'should return an invalid payload signature error' do
-        result = verify
-        expect(result).to be_error
-        expect(result).to be_kind_of(InvalidPayloadSignatureError)
+      it 'returns false' do
+        expect(verify).to eq false
       end
     end
   end

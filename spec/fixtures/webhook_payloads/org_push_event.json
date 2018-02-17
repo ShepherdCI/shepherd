@@ -1,0 +1,176 @@
+{
+  "ref": "refs/heads/master",
+  "before": "5aa66bb51f3ba48b32ac836c235ffa6ae05332f6",
+  "after": "f004f86e3ec97edc292aabb29d931cffab535c91",
+  "created": false,
+  "deleted": false,
+  "forced": false,
+  "base_ref": null,
+  "compare": "https://github.com/rails/rails/compare/5aa66bb51f3b...f004f86e3ec9",
+  "commits": [
+    {
+      "id": "f004f86e3ec97edc292aabb29d931cffab535c91",
+      "distinct": true,
+      "message": "Remove test stage from .ci.yml",
+      "timestamp": "2016-09-08T14:42:38-04:00",
+      "url": "https://github.com/rails/rails/commit/f004f86e3ec97edc292aabb29d931cffab535c91",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wtandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wtandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        ".ci.yml"
+      ]
+    }
+  ],
+  "head_commit": {
+    "id": "f004f86e3ec97edc292aabb29d931cffab535c91",
+    "distinct": true,
+    "message": "Remove test stage from .ci.yml",
+    "timestamp": "2016-09-08T14:42:38-04:00",
+    "url": "https://github.com/rails/rails/commit/f004f86e3ec97edc292aabb29d931cffab535c91",
+    "author": {
+      "name": "Wade Tandy",
+      "email": "wtandy@bloomberg.net",
+      "username": "wtandy"
+    },
+    "committer": {
+      "name": "Wade Tandy",
+      "email": "wtandy@bloomberg.net",
+      "username": "wtandy"
+    },
+    "added": [
+
+    ],
+    "removed": [
+
+    ],
+    "modified": [
+      ".ci.yml"
+    ]
+  },
+  "repository": {
+    "id": 83461,
+    "name": "rails",
+    "full_name": "rails/rails",
+    "owner": {
+      "name": "rails",
+      "email": null
+    },
+    "private": false,
+    "html_url": "https://github.com/rails/rails",
+    "description": "",
+    "fork": false,
+    "url": "https://github.com/rails/rails",
+    "forks_url": "https://api.github.com/v3/repos/rails/rails/forks",
+    "keys_url": "https://api.github.com/v3/repos/rails/rails/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/v3/repos/rails/rails/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/v3/repos/rails/rails/teams",
+    "hooks_url": "https://api.github.com/v3/repos/rails/rails/hooks",
+    "issue_events_url": "https://api.github.com/v3/repos/rails/rails/issues/events{/number}",
+    "events_url": "https://api.github.com/v3/repos/rails/rails/events",
+    "assignees_url": "https://api.github.com/v3/repos/rails/rails/assignees{/user}",
+    "branches_url": "https://api.github.com/v3/repos/rails/rails/branches{/branch}",
+    "tags_url": "https://api.github.com/v3/repos/rails/rails/tags",
+    "blobs_url": "https://api.github.com/v3/repos/rails/rails/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/v3/repos/rails/rails/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/v3/repos/rails/rails/git/refs{/sha}",
+    "trees_url": "https://api.github.com/v3/repos/rails/rails/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/v3/repos/rails/rails/statuses/{sha}",
+    "languages_url": "https://api.github.com/v3/repos/rails/rails/languages",
+    "stargazers_url": "https://api.github.com/v3/repos/rails/rails/stargazers",
+    "contributors_url": "https://api.github.com/v3/repos/rails/rails/contributors",
+    "subscribers_url": "https://api.github.com/v3/repos/rails/rails/subscribers",
+    "subscription_url": "https://api.github.com/v3/repos/rails/rails/subscription",
+    "commits_url": "https://api.github.com/v3/repos/rails/rails/commits{/sha}",
+    "git_commits_url": "https://api.github.com/v3/repos/rails/rails/git/commits{/sha}",
+    "comments_url": "https://api.github.com/v3/repos/rails/rails/comments{/number}",
+    "issue_comment_url": "https://api.github.com/v3/repos/rails/rails/issues/comments{/number}",
+    "contents_url": "https://api.github.com/v3/repos/rails/rails/contents/{+path}",
+    "compare_url": "https://api.github.com/v3/repos/rails/rails/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/v3/repos/rails/rails/merges",
+    "archive_url": "https://api.github.com/v3/repos/rails/rails/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/v3/repos/rails/rails/downloads",
+    "issues_url": "https://api.github.com/v3/repos/rails/rails/issues{/number}",
+    "pulls_url": "https://api.github.com/v3/repos/rails/rails/pulls{/number}",
+    "milestones_url": "https://api.github.com/v3/repos/rails/rails/milestones{/number}",
+    "notifications_url": "https://api.github.com/v3/repos/rails/rails/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/v3/repos/rails/rails/labels{/name}",
+    "releases_url": "https://api.github.com/v3/repos/rails/rails/releases{/id}",
+    "deployments_url": "https://api.github.com/v3/repos/rails/rails/deployments",
+    "created_at": 1469743838,
+    "updated_at": "2016-09-08T18:40:10Z",
+    "pushed_at": 1473360204,
+    "git_url": "git://github.com/rails/rails.git",
+    "ssh_url": "git@github.com:rails/rails.git",
+    "clone_url": "https://github.com/rails/rails.git",
+    "svn_url": "https://github.com/rails/rails",
+    "homepage": null,
+    "size": 7,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "forks_count": 4,
+    "mirror_url": null,
+    "open_issues_count": 0,
+    "forks": 4,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "master",
+    "stargazers": 0,
+    "master_branch": "master",
+    "organization": "rails"
+  },
+  "pusher": {
+    "name": "wtandy",
+    "email": "wtandy@bloomberg.net"
+  },
+  "organization": {
+    "login": "rails",
+    "id": 7838,
+    "url": "https://api.github.com/v3/orgs/rails",
+    "repos_url": "https://api.github.com/v3/orgs/rails/repos",
+    "events_url": "https://api.github.com/v3/orgs/rails/events",
+    "hooks_url": "https://api.github.com/v3/orgs/rails/hooks",
+    "issues_url": "https://api.github.com/v3/orgs/rails/issues",
+    "members_url": "https://api.github.com/v3/orgs/rails/members{/member}",
+    "public_members_url": "https://api.github.com/v3/orgs/rails/public_members{/member}",
+    "avatar_url": "https://github.com/avatars/u/7838?",
+    "description": null
+  },
+  "sender": {
+    "login": "wtandy",
+    "id": 32,
+    "avatar_url": "https://github.com/avatars/u/32?",
+    "gravatar_id": "",
+    "url": "https://api.github.com/v3/users/wtandy",
+    "html_url": "https://github.com/wtandy",
+    "followers_url": "https://api.github.com/v3/users/wtandy/followers",
+    "following_url": "https://api.github.com/v3/users/wtandy/following{/other_user}",
+    "gists_url": "https://api.github.com/v3/users/wtandy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/v3/users/wtandy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/v3/users/wtandy/subscriptions",
+    "organizations_url": "https://api.github.com/v3/users/wtandy/orgs",
+    "repos_url": "https://api.github.com/v3/users/wtandy/repos",
+    "events_url": "https://api.github.com/v3/users/wtandy/events{/privacy}",
+    "received_events_url": "https://api.github.com/v3/users/wtandy/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}

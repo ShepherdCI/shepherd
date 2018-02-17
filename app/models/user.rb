@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  alias_attribute :canonical_name, :github_login
+
   devise :omniauthable, :trackable
 
   def mint_jwt
@@ -14,7 +16,7 @@ class User < ApplicationRecord
   def jwt_payload
     {
       data: {
-        id:           id,
+        id: id,
       }
     }
   end

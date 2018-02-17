@@ -1,0 +1,18 @@
+{
+  "name": ".ci.yml",
+  "path": ".ci.yml",
+  "sha": "598f9c0d3bfc3464ae4562f0af1f5234038817ca",
+  "size": 504,
+  "url": "https://api.github.com/repos/wadetandy/shepherd/contents/.ci.yml?ref=8566ea6d45f18ddad9bbd093267f97c70a9c9039",
+  "html_url": "https://github.com/wadetandy/shepherd/blob/8566ea6d45f18ddad9bbd093267f97c70a9c9039/.ci.yml",
+  "git_url": "https://api.github.com/repos/wadetandy/shepherd/git/blobs/598f9c0d3bfc3464ae4562f0af1f5234038817ca",
+  "download_url": "https://raw.githubusercontent.com/wadetandy/shepherd/8566ea6d45f18ddad9bbd093267f97c70a9c9039/.ci.yml?token=AAJD9v-hCokS31MI-DPPD9HoIjXVx-Jmks5XwJsxwA%3D%3D",
+  "type": "file",
+  "content": "aW1hZ2U6ICRDT05UQUlORVIKCnNlcnZpY2VzOgogIC0gJFBPU1RHUkVTX0NP\nTlRBSU5FUgoKdmFyaWFibGVzOgogIENPTlRBSU5FUjogICAgICAgICAgcnVi\neToyLjMuMAogIFBPU1RHUkVTX0NPTlRBSU5FUjogcG9zdGdyZXMKICBQT1NU\nR1JFU19IT1NUOiAgICAgIHBvc3RncmVzCiAgUE9TVEdSRVNfREI6ICAgICAg\nICBzaGVwaGVyZF90ZXN0CiAgUE9TVEdSRVNfVVNFUjogICAgICBydW5uZXIK\nICBQT1NUR1JFU19QQVNTV09SRDogICIiCgpjYWNoZToKICBrZXk6ICIkQ0lf\nQlVJTERfUkVGX05BTUUiCiAgcGF0aHM6CiAgICAtIHZlbmRvci9idW5kbGUK\nCmJlZm9yZV9zY3JpcHQ6CiAgLSBidW5kbGUgaW5zdGFsbCAtLXBhdGggdmVu\nZG9yL2J1bmRsZSAtLWpvYnMgMTAKCnJzcGVjOgogIHN0YWdlOiB0ZXN0CiAg\ndmFyaWFibGVzOgogICAgUkFJTFNfRU5WOiB0ZXN0CiAgdGFnczoKICAgIC0g\nYmNzLWNhY2hlCgogIHNjcmlwdDoKICAgIC0gcmFpbHMgZGI6c2V0dXAKICAg\nIC0gcnNwZWMK\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/wadetandy/shepherd/contents/.ci.yml?ref=8566ea6d45f18ddad9bbd093267f97c70a9c9039",
+    "git": "https://api.github.com/repos/wadetandy/shepherd/git/blobs/598f9c0d3bfc3464ae4562f0af1f5234038817ca",
+    "html": "https://github.com/wadetandy/shepherd/blob/8566ea6d45f18ddad9bbd093267f97c70a9c9039/.ci.yml"
+  }
+}

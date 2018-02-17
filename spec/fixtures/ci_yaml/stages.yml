@@ -1,0 +1,24 @@
+stages:
+  - test
+  - build
+  - release
+
+rspec:
+  stage: test
+  script:
+    - rspec
+
+rcov:
+  stage: test
+  script:
+    - rcov
+
+precompile:
+  stage: build
+  script:
+    - rake assets:precompile
+
+deploy:
+  stage: release
+  script:
+    - rake cap:deploy

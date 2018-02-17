@@ -14,6 +14,7 @@ gem 'sidekiq'
 gem "faraday"
 gem "octokit"
 gem 'virtus'
+gem 'graphql-client'
 
 gem 'pry'
 

@@ -1,0 +1,4 @@
+build_with_errors:
+  script:
+    - echo "Hello World"
+  invalid_key: 'foobar'

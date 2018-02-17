@@ -1,0 +1,34 @@
+stages:
+  - test
+  - build
+  - staging_deploy
+  - production_deploy
+
+rspec:
+  stage: test
+  script:
+    - rspec
+
+precompile:
+  stage: build
+  script:
+    - rake assets:precompile
+
+push_to_staging:
+  stage: staging_deploy
+  script:
+    - script/deploy staging
+  environment:
+    name: staging
+  only:
+    - master@upstream/repo_name
+
+push_to_prod:
+  stage: production_deploy
+  environment:
+    name: production
+  when: manual
+  script:
+    - script/deploy production
+  only:
+    - master@upstream/repo_name

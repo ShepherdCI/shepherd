@@ -1,0 +1,26 @@
+[
+  {
+    "login": "wadetandy",
+    "id": 148470,
+    "avatar_url": "https://avatars.githubusercontent.com/u/148470?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wadetandy",
+    "html_url": "https://github.com/wadetandy",
+    "followers_url": "https://api.github.com/users/wadetandy/followers",
+    "following_url": "https://api.github.com/users/wadetandy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wadetandy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wadetandy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wadetandy/subscriptions",
+    "organizations_url": "https://api.github.com/users/wadetandy/orgs",
+    "repos_url": "https://api.github.com/users/wadetandy/repos",
+    "events_url": "https://api.github.com/users/wadetandy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wadetandy/received_events",
+    "type": "User",
+    "site_admin": false,
+    "permissions": {
+      "admin": true,
+      "push": true,
+      "pull": true
+    }
+  }
+]

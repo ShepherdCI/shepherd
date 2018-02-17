@@ -7,7 +7,7 @@ class OmniauthCallbacksController < FullStackControllerBase
       return
     end
 
-    user = gh_user.create_or_update_model
+    user = gh_user.upsert_model
 
     if user.persisted?
       unless (user.oauth_scope - scopes).present?

@@ -23,7 +23,7 @@ guard :rspec, cmd: "bundle exec rspec" do
     [
       rspec.spec.call("routing/#{m[1]}_routing"),
       rspec.spec.call("controllers/#{m[1]}_controller"),
-      rspec.spec.call("acceptance/#{m[1]}")
+      "#{rspec.spec_dir}/api/v1/#{m[1]}"
     ]
   end
 
@@ -36,11 +36,13 @@ guard :rspec, cmd: "bundle exec rspec" do
   watch(rails.view_dirs)     { |m| rspec.spec.call("features/#{m[1]}") }
   watch(rails.layouts)       { |m| rspec.spec.call("features/#{m[1]}") }
 
-  # Turnip features and steps
-  watch(%r{^spec/acceptance/(.+)\.feature$})
-  watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$}) do |m|
-    Dir[File.join("**/#{m[1]}.feature")][0] || "spec/acceptance"
+  api_spec = lambda do |m|
+    "#{rspec.spec_dir}/api/v1/#{m[1].pluralize}"
   end
+
+  watch(%r{^app/resources/(.+)_resource\.rb$}, &api_spec)
+  watch(%r{^app/models/(.+)\.rb$}, &api_spec)
+  watch(%r{^app/serializers/serializable_(.+)\.rb$}, &api_spec)
 end
 
 if `uname` =~ /Darwin/

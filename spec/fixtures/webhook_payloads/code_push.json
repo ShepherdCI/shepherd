@@ -1,0 +1,947 @@
+{
+  "ref": "refs/heads/master",
+  "before": "068eea3447e13f7b96e5d6ba4bca9ea023ad5c52",
+  "after": "f4e218a5c5226d9015e70005a1ac029b38512a1d",
+  "created": false,
+  "deleted": false,
+  "forced": false,
+  "base_ref": null,
+  "compare": "https://github.com/wadetandy/shepherd/compare/068eea3447e1...f4e218a5c522",
+  "commits": [
+    {
+      "id": "37b04beca72416ac875c5d070db90d01536b2ee3",
+      "tree_id": "56d66c1a733ff97ef12c00e34e3364a16a5f190b",
+      "distinct": true,
+      "message": "Add specs for CI::Trigger model",
+      "timestamp": "2016-08-03T12:43:10-07:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/37b04beca72416ac875c5d070db90d01536b2ee3",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+        "spec/factories/ci_trigger.rb"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "spec/models/ci/trigger_spec.rb"
+      ]
+    },
+    {
+      "id": "920a05193689a8adc7e2cc046dfd41953b9986d9",
+      "tree_id": "93e8c830258a6979318160246de9fcef4c599896",
+      "distinct": true,
+      "message": "Move logic for determining admins into the user model",
+      "timestamp": "2016-08-03T12:43:53-07:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/920a05193689a8adc7e2cc046dfd41953b9986d9",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/models/user.rb",
+        "config/routes.rb",
+        "spec/models/user_spec.rb"
+      ]
+    },
+    {
+      "id": "59c7e6534e2589176d8cb51159c0c0adc9ad70dd",
+      "tree_id": "3e18d18fd4513e0c9dc734d5996747b8b4ff42bb",
+      "distinct": true,
+      "message": "Add optional job description to CI Yaml format\n\nIf a CI job contains a `description` field, it will be included in the\ncommit status description when sent to github.",
+      "timestamp": "2016-08-18T18:32:35-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/59c7e6534e2589176d8cb51159c0c0adc9ad70dd",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+        "spec/factories/ci_build.rb",
+        "spec/lib/ci/gitlab_ci_yaml_processor_custom_extensions_spec.rb",
+        "spec/models/ci/build_spec.rb"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/models/ci/build.rb",
+        "app/services/ci/create_builds_for_commit.rb",
+        "lib/ci/gitlab_ci_yaml_processor.rb",
+        "spec/lib/ci/gitlab_ci_yaml_processor_spec.rb"
+      ]
+    },
+    {
+      "id": "b9495b723da18d97958569176bde71c67be31650",
+      "tree_id": "ecfb3c7c7283db7824b89e0e5a121cb1e4782d0d",
+      "distinct": true,
+      "message": "Add description to rspec CI job",
+      "timestamp": "2016-08-19T10:03:57-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/b9495b723da18d97958569176bde71c67be31650",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        ".ci.yml"
+      ]
+    },
+    {
+      "id": "798fdbc3a38ab077266f9d4c492778d95396f072",
+      "tree_id": "4f117549eec6682d1c6299de39571b479dd5e88e",
+      "distinct": true,
+      "message": "Allow admin to do anything",
+      "timestamp": "2016-08-19T11:58:24-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/798fdbc3a38ab077266f9d4c492778d95396f072",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/controllers/application_controller.rb"
+      ]
+    },
+    {
+      "id": "a85bf91a1544a6425e3ebf457abe4e5aa263e340",
+      "tree_id": "5161ae8e72d52de592f72efe44a35c21f68df322",
+      "distinct": true,
+      "message": "Add params inspection to build update api endpoint",
+      "timestamp": "2016-08-19T12:19:59-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/a85bf91a1544a6425e3ebf457abe4e5aa263e340",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "lib/ci/api/builds.rb"
+      ]
+    },
+    {
+      "id": "959b20e2809f96d255fe5c84d77a954f41dfbbdc",
+      "tree_id": "0a81557ecab58534c17d73ade3276885eb342bcf",
+      "distinct": true,
+      "message": "Remove BCS tag requirement from CI Config",
+      "timestamp": "2016-08-19T12:21:15-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/959b20e2809f96d255fe5c84d77a954f41dfbbdc",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        ".ci.yml"
+      ]
+    },
+    {
+      "id": "08301c39ad1a6208f70b522d7a70d8ab5e3eb79b",
+      "tree_id": "dc15c5542d6ab57e14ce0ec392b5e6c8a759b264",
+      "distinct": true,
+      "message": "Temporarily disable build caching in CI config",
+      "timestamp": "2016-08-19T12:25:39-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/08301c39ad1a6208f70b522d7a70d8ab5e3eb79b",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        ".ci.yml"
+      ]
+    },
+    {
+      "id": "bca20d853cbfff9bbcb4108802d3b5525dcc2766",
+      "tree_id": "dc15c5542d6ab57e14ce0ec392b5e6c8a759b264",
+      "distinct": true,
+      "message": "Merge pull request #9 from wtandy/disable_build_cache\n\nTemporarily disable build caching in CI config",
+      "timestamp": "2016-08-19T12:32:19-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/bca20d853cbfff9bbcb4108802d3b5525dcc2766",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        ".ci.yml"
+      ]
+    },
+    {
+      "id": "7ebe3fa15aef9333642878ecb7f81ace6fb85012",
+      "tree_id": "1f9771816ca395afc7972f996990ab31f915290e",
+      "distinct": true,
+      "message": "list all files in CI runner",
+      "timestamp": "2016-08-22T15:12:42-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/7ebe3fa15aef9333642878ecb7f81ace6fb85012",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        ".ci.yml"
+      ]
+    },
+    {
+      "id": "22dd4408d354c7317c655e5ad18502a715eb3932",
+      "tree_id": "6bff10fa18b208c31c1081d7d58b72e111efae6b",
+      "distinct": true,
+      "message": "Merge branch 'master' of https://bbgithub.dev.bloomberg.com/wtandy/shepherd",
+      "timestamp": "2016-08-22T15:13:47-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/22dd4408d354c7317c655e5ad18502a715eb3932",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        ".ci.yml"
+      ]
+    },
+    {
+      "id": "74d69c74111a7c67fe7b23a6c3b8e6a947ddeff4",
+      "tree_id": "131ec7f5d4a0e98b1efa62bdc98c8269ec418327",
+      "distinct": true,
+      "message": "Add sidekiq web console",
+      "timestamp": "2016-08-23T18:21:53-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/74d69c74111a7c67fe7b23a6c3b8e6a947ddeff4",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "Gemfile",
+        "Gemfile.lock",
+        "config/routes.rb"
+      ]
+    },
+    {
+      "id": "2aa5a5cefdfe5cb2373428c4f125a4e7d7ab06ca",
+      "tree_id": "b73fad2ee381fff8b2bd33ebc16fcda5655e546e",
+      "distinct": true,
+      "message": "Check  webhook (de)activation on any service delta\n\nPreviously we were only checking for whether to run the service logic if\nthe service active state actually changed.  While this saved a miniscule\nprocessing amount, it makes it easier for the system to get out of sync\nwith github.  It should always update github with the correct\nhook registration state no matter what.",
+      "timestamp": "2016-08-23T18:22:01-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/2aa5a5cefdfe5cb2373428c4f125a4e7d7ab06ca",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/services/update_service.rb",
+        "spec/services/update_service_spec.rb"
+      ]
+    },
+    {
+      "id": "604dcf7bf13008f3e90fc2abd4960556f5751639",
+      "tree_id": "ac7e8d979a1c5f33bb0b43d8f3dda42dd6963956",
+      "distinct": true,
+      "message": "Make Org hook management more robust\n\nHooks that have been deleted manually on Github have traditionally\nconfused Shepherd.  This adds some additional state checking to\ndetermine what actions to perform.",
+      "timestamp": "2016-08-23T18:22:11-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/604dcf7bf13008f3e90fc2abd4960556f5751639",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+        "spec/services/deregister_org_hook_spec.rb",
+        "spec/services/github/delete_org_hook_spec.rb"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/services/concerns/callable_service.rb",
+        "app/services/concerns/github_service.rb",
+        "app/services/concerns/hookable_action.rb",
+        "app/services/deregister_org_hook.rb",
+        "app/services/github/delete_org_hook.rb",
+        "app/statuses/github_authorization_error.rb"
+      ]
+    },
+    {
+      "id": "b309628c687e1d98cbc6b87b76bec846c74e886f",
+      "tree_id": "320b830400b1688e9de316e352a69c4f2567068f",
+      "distinct": true,
+      "message": "Rename repo#users to #collaborators to better match GH vocab",
+      "timestamp": "2016-08-23T18:30:37-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/b309628c687e1d98cbc6b87b76bec846c74e886f",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/models/org.rb",
+        "app/models/repo.rb",
+        "app/models/user.rb",
+        "app/policies/repo_policy.rb",
+        "app/services/github/delete_repo_hook.rb",
+        "spec/factories/repo.rb",
+        "spec/jobs/hookable_activation_job_spec.rb",
+        "spec/jobs/hookable_deactivation_job_spec.rb",
+        "spec/models/repo_spec.rb",
+        "spec/models/user_spec.rb"
+      ]
+    },
+    {
+      "id": "f9bb0fd950338e6e22cff47df8b4a71d439f6a71",
+      "tree_id": "650db45a32fb4265c75f327d15ab331675827fcc",
+      "distinct": true,
+      "message": "temporarily disable sidekiq console",
+      "timestamp": "2016-08-23T18:35:46-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/f9bb0fd950338e6e22cff47df8b4a71d439f6a71",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "config/routes.rb"
+      ]
+    },
+    {
+      "id": "570907ce95cc46ee5fd8c901923381e01eccd0bc",
+      "tree_id": "ed2cd04f03981d73ab171d8af796052d9be49dd3",
+      "distinct": true,
+      "message": "Rework build retry logic\n\nThe old way of retrying builds required the service to enumerate all\nfields of the build to duplicate, as opposed to specifically settings\nfields that shouldn't be duplicated.  This caused bugs when new fields\nwere added that didn't get put into the retry logic.",
+      "timestamp": "2016-08-29T12:48:03-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/570907ce95cc46ee5fd8c901923381e01eccd0bc",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+        "spec/factories/ci_commit.rb",
+        "spec/factories/ci_runner.rb"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/models/ci/build.rb",
+        "app/services/ci/retry_build.rb",
+        "app/services/update_commit_status.rb",
+        "spec/models/ci/build_spec.rb",
+        "spec/services/update_commit_status_spec.rb"
+      ]
+    },
+    {
+      "id": "a67c7e7dc07b9bbb62ab62f502461a79a7723b14",
+      "tree_id": "50e876a7968c1e2aa528c6a8072dbd89ad365289",
+      "distinct": true,
+      "message": "Rename ci_service form partial\n\nMissed this in my big refactor a few weeks ago.",
+      "timestamp": "2016-08-29T12:49:14-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/a67c7e7dc07b9bbb62ab62f502461a79a7723b14",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+        "app/views/shared/services/form/_ci_service.haml"
+      ],
+      "removed": [
+        "app/views/shared/services/form/_ci_integration.haml"
+      ],
+      "modified": [
+
+      ]
+    },
+    {
+      "id": "dad78aeaf586ad59710a30fb4aa6ce3b2418b6e0",
+      "tree_id": "6d50ba25b5ea20b07192f383f5e4baaaebb2c44b",
+      "distinct": true,
+      "message": "Don't include build trace in duplicated build",
+      "timestamp": "2016-08-29T12:54:27-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/dad78aeaf586ad59710a30fb4aa6ce3b2418b6e0",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/models/ci/build.rb",
+        "spec/models/ci/build_spec.rb"
+      ]
+    },
+    {
+      "id": "907e3f991af1d1c46b0b34352d967f638e2af49e",
+      "tree_id": "a03fc647972aa729652fcd3f844c8ed04195dae1",
+      "distinct": true,
+      "message": "Refactor github object upserting\n\nOne of the current sharp edges of Shepherd is the authorization system.\nIn addition to being a bit cumbersome to work with from a code\nperspective, the authorization is driven from whether a user has\npermission to access an org or repo on github, which can be troublesome\nto keep in sync, especially for users who rarely interact with shepherd\ndirectly.\n\nThis commit begins to address that problem by first refactoring the way\nkeep application models in sync with their github counterparts. This\nalso creates event types for org and repository membership changes,\nwhich we will eventually leverage to listen for updates.",
+      "timestamp": "2016-08-30T07:42:00-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/907e3f991af1d1c46b0b34352d967f638e2af49e",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+        "app/jobs/process_github_event_job.rb",
+        "app/models/concerns/github/model_sync.rb",
+        "app/models/concerns/github/profile_entity.rb",
+        "app/models/concerns/github_syncable.rb",
+        "app/models/github/organization.rb",
+        "app/models/github/repository/permissions.rb",
+        "app/models/github/user.rb",
+        "app/models/github_events/org_membership_event.rb",
+        "app/models/github_events/repo_collaborator_event.rb",
+        "app/services/github/get_repo_collaborators.rb",
+        "app/services/sync_repo_collaborators.rb",
+        "spec/e2e/webhooks/pull_request_spec.rb",
+        "spec/factories/github_event.rb",
+        "spec/fixtures/github/org.json",
+        "spec/fixtures/github/repo.json",
+        "spec/fixtures/github/repo_collaborators.json",
+        "spec/fixtures/github/repository.json",
+        "spec/fixtures/github/user_repos.json",
+        "spec/fixtures/webhook_payloads/org_membership.json",
+        "spec/fixtures/webhook_payloads/pull_request_opened.json",
+        "spec/fixtures/webhook_payloads/push.json",
+        "spec/fixtures/webhook_payloads/repo_collaborator.json",
+        "spec/models/github/repository/permissions.rb",
+        "spec/models/github/repository_spec.rb",
+        "spec/models/github_events/org_membership_event_spec.rb",
+        "spec/models/github_events/repo_collaborator_event_spec.rb",
+        "spec/services/github/delete_repo_hook_spec.rb",
+        "spec/services/github/get_repo_collaborators_spec.rb",
+        "spec/services/sync_repo_collaborators_spec.rb",
+        "spec/support/helpers/fixtures_helper.rb"
+      ],
+      "removed": [
+        "app/services/upsert_org.rb",
+        "app/services/upsert_user.rb",
+        "spec/services/upsert_org_spec.rb",
+        "spec/services/upsert_user_spec.rb"
+      ],
+      "modified": [
+        "app/controllers/sessions_controller.rb",
+        "app/jobs/run_service_job.rb",
+        "app/models/github/repository.rb",
+        "app/models/github_auth_options.rb",
+        "app/models/github_event.rb",
+        "app/models/membership.rb",
+        "app/models/org.rb",
+        "app/models/repo.rb",
+        "app/models/user.rb",
+        "app/services/find_or_create_org.rb",
+        "app/services/find_or_create_repository.rb",
+        "app/services/github/get_org.rb",
+        "app/services/github/get_repo.rb",
+        "app/services/github/get_user_repos.rb",
+        "app/services/sync_user_repos.rb",
+        "app/services/upsert_repo.rb",
+        "spec/models/github_event_spec.rb",
+        "spec/models/org_spec.rb",
+        "spec/models/repo_spec.rb",
+        "spec/models/user_spec.rb",
+        "spec/services/find_or_create_org_spec.rb",
+        "spec/services/github/get_org_spec.rb",
+        "spec/services/github/get_repo_spec.rb",
+        "spec/services/github/get_user_repos_spec.rb",
+        "spec/services/sync_user_repos_spec.rb",
+        "spec/services/upsert_repo_spec.rb",
+        "spec/spec_helper.rb"
+      ]
+    },
+    {
+      "id": "9db42a6b465c500a51fcc0dc457f556906f3cb19",
+      "tree_id": "607b30e899adbac00dd5aff74bb16fef5ded3f90",
+      "distinct": true,
+      "message": "Create E2E request spec for pull request events\n\nThis will verify that a pull request event will properly kick off jobs\nin the system when they are received. Should make this a bit less\nbrittle in refactoring.",
+      "timestamp": "2016-08-30T07:45:20-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/9db42a6b465c500a51fcc0dc457f556906f3cb19",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+        "spec/fixtures/github/file_contents.json"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/controllers/github_events_controller.rb",
+        "app/models/github_event.rb",
+        "app/models/services/ci_service.rb",
+        "app/models/services/dummy_service.rb",
+        "spec/e2e/webhooks/pull_request_spec.rb",
+        "spec/factories/service.rb",
+        "spec/fixtures/webhook_payloads/pull_request_opened.json",
+        "spec/models/github_event_spec.rb",
+        "spec/spec_helper.rb"
+      ]
+    },
+    {
+      "id": "c23b6f65b0b1044b8197f22a267db104d45412a2",
+      "tree_id": "f86f035199343b642e18c73fec1a0172e57dba54",
+      "distinct": true,
+      "message": "Remove old UpsertRepo service\n\nThis has been replaced by a class method on the Repo model.",
+      "timestamp": "2016-08-30T07:45:20-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/c23b6f65b0b1044b8197f22a267db104d45412a2",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+        "app/services/upsert_repo.rb",
+        "spec/services/upsert_repo_spec.rb"
+      ],
+      "modified": [
+
+      ]
+    },
+    {
+      "id": "d3976210dd07b481c7b0b210e5a16771378245d4",
+      "tree_id": "9dbf18083787d553d0c86098473ca0beffd63036",
+      "distinct": true,
+      "message": "Fix user org syncing to work with new upsert model actions",
+      "timestamp": "2016-08-30T07:45:20-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/d3976210dd07b481c7b0b210e5a16771378245d4",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+        "app/models/commit.rb"
+      ],
+      "modified": [
+        "app/controllers/orgs_controller.rb",
+        "app/models/concerns/github_syncable.rb",
+        "app/models/membership.rb",
+        "app/services/github/get_org_repos.rb",
+        "app/services/github/get_user_orgs.rb",
+        "app/services/sync_org_repos.rb",
+        "app/services/sync_user_orgs.rb"
+      ]
+    },
+    {
+      "id": "3ce9ca8c7d711bc11d52acae13428905602eda9c",
+      "tree_id": "54a117bbace2fac152e0453143d37f236af030b5",
+      "distinct": true,
+      "message": "Inject build variables from the ci service\n\nPreviously we were always pulling variables from the repo settings even\nif the hook was setup for the entire org.  This will allow those\norg-wide settings to trickle down to all child repos.",
+      "timestamp": "2016-08-30T07:45:21-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/3ce9ca8c7d711bc11d52acae13428905602eda9c",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/models/ci/build.rb",
+        "app/models/services/ci_service.rb"
+      ]
+    },
+    {
+      "id": "f8e1067b6a268b752e9e3dea1d26240fa57fa417",
+      "tree_id": "0c39ae1a016ffc8e10e319f1d1aecf81c4b76bd4",
+      "distinct": true,
+      "message": "Improve the model for pull request builds\n\nNow we save a reference to both the source and fork repository when\ndoing a pull request build. This will let us do things like restricting\nbuilds to being only on the parent repo or selecting the build\nvariables.",
+      "timestamp": "2016-08-30T07:45:21-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/f8e1067b6a268b752e9e3dea1d26240fa57fa417",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+        "spec/fixtures/webhook_payloads/pull_request_opened_from_fork.json"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "app/models/ci/commit.rb",
+        "app/services/ci/create_builds_for_commit.rb",
+        "app/services/ci/create_pull_request_build.rb",
+        "spec/e2e/webhooks/pull_request_spec.rb"
+      ]
+    },
+    {
+      "id": "f4e218a5c5226d9015e70005a1ac029b38512a1d",
+      "tree_id": "10ff7d14a3f30581158ba2b836705e7004d927ab",
+      "distinct": true,
+      "message": "Start breaking out org sych into background\n\nFollowing the same pattern as with the repo sync.  Need to clean both of\nthese up a little further, but I still need to think further about how\nto do that.",
+      "timestamp": "2016-08-30T07:45:21-04:00",
+      "url": "https://github.com/wadetandy/shepherd/commit/f4e218a5c5226d9015e70005a1ac029b38512a1d",
+      "author": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "committer": {
+        "name": "Wade Tandy",
+        "email": "wtandy@bloomberg.net",
+        "username": "wadetandy"
+      },
+      "added": [
+        "app/controllers/org_syncs_controller.rb"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        "config/routes.rb"
+      ]
+    }
+  ],
+  "head_commit": {
+    "id": "f4e218a5c5226d9015e70005a1ac029b38512a1d",
+    "tree_id": "10ff7d14a3f30581158ba2b836705e7004d927ab",
+    "distinct": true,
+    "message": "Start breaking out org sych into background\n\nFollowing the same pattern as with the repo sync.  Need to clean both of\nthese up a little further, but I still need to think further about how\nto do that.",
+    "timestamp": "2016-08-30T07:45:21-04:00",
+    "url": "https://github.com/wadetandy/shepherd/commit/f4e218a5c5226d9015e70005a1ac029b38512a1d",
+    "author": {
+      "name": "Wade Tandy",
+      "email": "wtandy@bloomberg.net",
+      "username": "wadetandy"
+    },
+    "committer": {
+      "name": "Wade Tandy",
+      "email": "wtandy@bloomberg.net",
+      "username": "wadetandy"
+    },
+    "added": [
+      "app/controllers/org_syncs_controller.rb"
+    ],
+    "removed": [
+
+    ],
+    "modified": [
+      "config/routes.rb"
+    ]
+  },
+  "repository": {
+    "id": 53509934,
+    "name": "shepherd",
+    "full_name": "wadetandy/shepherd",
+    "owner": {
+      "name": "wadetandy",
+      "email": "wade.tandy@gmail.com"
+    },
+    "private": true,
+    "html_url": "https://github.com/wadetandy/shepherd",
+    "description": "",
+    "fork": false,
+    "url": "https://github.com/wadetandy/shepherd",
+    "forks_url": "https://api.github.com/repos/wadetandy/shepherd/forks",
+    "keys_url": "https://api.github.com/repos/wadetandy/shepherd/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/wadetandy/shepherd/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/wadetandy/shepherd/teams",
+    "hooks_url": "https://api.github.com/repos/wadetandy/shepherd/hooks",
+    "issue_events_url": "https://api.github.com/repos/wadetandy/shepherd/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/wadetandy/shepherd/events",
+    "assignees_url": "https://api.github.com/repos/wadetandy/shepherd/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/wadetandy/shepherd/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/wadetandy/shepherd/tags",
+    "blobs_url": "https://api.github.com/repos/wadetandy/shepherd/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/wadetandy/shepherd/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/wadetandy/shepherd/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/wadetandy/shepherd/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/wadetandy/shepherd/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/wadetandy/shepherd/languages",
+    "stargazers_url": "https://api.github.com/repos/wadetandy/shepherd/stargazers",
+    "contributors_url": "https://api.github.com/repos/wadetandy/shepherd/contributors",
+    "subscribers_url": "https://api.github.com/repos/wadetandy/shepherd/subscribers",
+    "subscription_url": "https://api.github.com/repos/wadetandy/shepherd/subscription",
+    "commits_url": "https://api.github.com/repos/wadetandy/shepherd/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/wadetandy/shepherd/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/wadetandy/shepherd/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/wadetandy/shepherd/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/wadetandy/shepherd/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/wadetandy/shepherd/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/wadetandy/shepherd/merges",
+    "archive_url": "https://api.github.com/repos/wadetandy/shepherd/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/wadetandy/shepherd/downloads",
+    "issues_url": "https://api.github.com/repos/wadetandy/shepherd/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/wadetandy/shepherd/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/wadetandy/shepherd/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/wadetandy/shepherd/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/wadetandy/shepherd/labels{/name}",
+    "releases_url": "https://api.github.com/repos/wadetandy/shepherd/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/wadetandy/shepherd/deployments",
+    "created_at": 1457538226,
+    "updated_at": "2016-08-02T22:16:05Z",
+    "pushed_at": 1472755052,
+    "git_url": "git://github.com/wadetandy/shepherd.git",
+    "ssh_url": "git@github.com:wadetandy/shepherd.git",
+    "clone_url": "https://github.com/wadetandy/shepherd.git",
+    "svn_url": "https://github.com/wadetandy/shepherd",
+    "homepage": null,
+    "size": 3758,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": "Ruby",
+    "has_issues": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "forks_count": 1,
+    "mirror_url": null,
+    "open_issues_count": 2,
+    "forks": 1,
+    "open_issues": 2,
+    "watchers": 0,
+    "default_branch": "master",
+    "stargazers": 0,
+    "master_branch": "master"
+  },
+  "pusher": {
+    "name": "wadetandy",
+    "email": "wade.tandy@gmail.com"
+  },
+  "sender": {
+    "login": "wadetandy",
+    "id": 148470,
+    "avatar_url": "https://avatars.githubusercontent.com/u/148470?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wadetandy",
+    "html_url": "https://github.com/wadetandy",
+    "followers_url": "https://api.github.com/users/wadetandy/followers",
+    "following_url": "https://api.github.com/users/wadetandy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wadetandy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wadetandy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wadetandy/subscriptions",
+    "organizations_url": "https://api.github.com/users/wadetandy/orgs",
+    "repos_url": "https://api.github.com/users/wadetandy/repos",
+    "events_url": "https://api.github.com/users/wadetandy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wadetandy/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}

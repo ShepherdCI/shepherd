@@ -1,0 +1,36 @@
+stages:
+  - test
+  - build
+  - review_deploy
+
+rspec:
+  stage: test
+  script:
+    - rspec
+
+precompile:
+  stage: build
+  script:
+    - rake assets:precompile
+
+deploy_feature_review:
+  stage: review_deploy
+  script:
+    - script/deploy $CI_ENVIRONMENT_SLUG
+  environment:
+    name: "review/$CI_BUILD_REF_NAME"
+    url: "https://$CI_ENVIRONMENT_SLUG.staging.example.com"
+    on_stop: teardown_review_app
+  only:
+    - branches
+
+teardown_review_app:
+  stage: review_deploy
+  environment:
+    name: "review/$CI_BUILD_REF_NAME"
+    action: stop
+  when: manual
+  script:
+    - script/teardown $CI_ENVIRONMENT_SLUG
+  only:
+    - branches

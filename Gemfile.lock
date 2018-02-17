@@ -84,6 +84,10 @@ GEM
     formatador (0.2.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    graphql (1.7.12)
+    graphql-client (0.12.2)
+      activesupport (>= 3.0, < 6.0)
+      graphql (~> 1.6)
     guard (2.14.2)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -315,6 +319,7 @@ DEPENDENCIES
   factory_bot_rails (~> 4.0)
   faker (~> 1.7)
   faraday
+  graphql-client
   guard
   guard-rspec
   jsonapi-rails (~> 0.2.1)

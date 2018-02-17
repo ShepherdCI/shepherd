@@ -1,0 +1,28 @@
+[
+  {
+    "login": "rails",
+    "id": 1045800,
+    "url": "https://api.github.com/orgs/rails",
+    "repos_url": "https://api.github.com/orgs/rails/repos",
+    "events_url": "https://api.github.com/orgs/rails/events",
+    "hooks_url": "https://api.github.com/orgs/rails/hooks",
+    "issues_url": "https://api.github.com/orgs/rails/issues",
+    "members_url": "https://api.github.com/orgs/rails/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/rails/public_members{/member}",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1045800?v=3",
+    "description": null
+  },
+  {
+    "login": "bloomberg",
+    "id": 1045800,
+    "url": "https://api.github.com/orgs/bloomberg",
+    "repos_url": "https://api.github.com/orgs/bloomberg/repos",
+    "events_url": "https://api.github.com/orgs/bloomberg/events",
+    "hooks_url": "https://api.github.com/orgs/bloomberg/hooks",
+    "issues_url": "https://api.github.com/orgs/bloomberg/issues",
+    "members_url": "https://api.github.com/orgs/bloomberg/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/bloomberg/public_members{/member}",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1045800?v=3",
+    "description": null
+  }
+]

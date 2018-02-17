@@ -35,6 +35,14 @@ RSpec.configure do |config|
     JsonapiErrorable.disable!
   end
 
+  config.before(:each, type: :system) do
+    driven_by :rack_test
+  end
+
+  config.before(:suite) do
+    ActiveJob::Base.queue_adapter = :test
+  end
+
   # bootstrap database cleaner
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
